@@ -11,7 +11,7 @@ interface words {
     level: number;
 }
 
-export default function n4() {
+export default function N4() {
     const data: words[] = pickDB(4);
     return (
         <div>

@@ -5,7 +5,7 @@ interface Props<T> {
     itemsPerPage: number;
 }
 
-export default function pagination<T>({ data, itemsPerPage }: Props<T>) {
+export default function Pagination<T>({ data, itemsPerPage }: Props<T>) {
     const [searchTerm, setSearchTerm] = useState('');
     const [currentPage, setCurrentPage] = useState(1);
     const totalPages = Math.ceil(data.length / itemsPerPage);
