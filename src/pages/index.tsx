@@ -6,6 +6,7 @@ import Navbar from '../components/navbar';
 import Link from 'next/link';
 import { level1, level2, level3, level4, level5 } from '../api';
 import { navLinks } from '../utils/data';
+import Footer from '../components/footer';
 
 const fetcher = (url: string) => fetch(url).then((r) => r.json())
 
@@ -21,7 +22,7 @@ const Home: NextPage = () => {
 
   const random = Math.floor(Math.random() * result.length);
   const wordsAPIRes = result[random];
-  
+
 
   const N5 = level5();
   const N4 = level4();
@@ -84,7 +85,7 @@ const Home: NextPage = () => {
             : null
           }
         </div>
-        
+
         <Link href={navLinks[3].path}>
           <span className="levels">Level 3 Vocabulary</span>
         </Link>
@@ -118,7 +119,7 @@ const Home: NextPage = () => {
             : null
           }
         </div>
-        
+
         <Link href={navLinks[1].path}>
           <span className="levels">Level 1 Vocabulary</span>
         </Link>
@@ -135,10 +136,8 @@ const Home: NextPage = () => {
             : null
           }
         </div>
-        {/*  <hr />
-        <RESTful /> */}
-        <hr />
       </div>
+      <Footer />
     </div>
   );
 };

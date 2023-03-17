@@ -1,3 +1,4 @@
+import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import { pickDB } from "../utils/search-words";
 import Pagination from "./pagination";
@@ -24,6 +25,7 @@ export default function n3() {
                 </div>
                 <Pagination data={data} itemsPerPage={15} />
             </div>
+            <Footer />
         </div >
     )
 }
