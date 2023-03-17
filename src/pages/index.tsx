@@ -52,7 +52,7 @@ const Home: NextPage = () => {
           </div>
         </div>
 
-        <Link href={navLinks[5].path}>
+        <Link href={navLinks[5].path} passHref>
           <span className="levels">Level 5 Vocabulary</span>
         </Link>
         <div className="grid md:grid-cols-5  gap-5 grid-cols-3 mb-20">
@@ -69,7 +69,7 @@ const Home: NextPage = () => {
           }
         </div>
 
-        <Link href={navLinks[4].path}>
+        <Link href={navLinks[4].path} passHref>
           <span className="levels">Level 4 Vocabulary</span>
         </Link>
         <div className="grid md:grid-cols-5  gap-5 grid-cols-3 mb-20">
@@ -86,7 +86,7 @@ const Home: NextPage = () => {
           }
         </div>
 
-        <Link href={navLinks[3].path}>
+        <Link href={navLinks[3].path} passHref>
           <span className="levels">Level 3 Vocabulary</span>
         </Link>
         <div className="grid md:grid-cols-5  gap-5 grid-cols-3 mb-20">
@@ -103,7 +103,7 @@ const Home: NextPage = () => {
           }
         </div>
 
-        <Link href={navLinks[2].path}>
+        <Link href={navLinks[2].path} passHref>
           <span className="levels">Level 2 Vocabulary</span>
         </Link>
         <div className="grid md:grid-cols-5  gap-5 grid-cols-3 mb-20">
@@ -120,7 +120,7 @@ const Home: NextPage = () => {
           }
         </div>
 
-        <Link href={navLinks[1].path}>
+        <Link href={navLinks[1].path} passHref>
           <span className="levels">Level 1 Vocabulary</span>
         </Link>
         <div className="grid md:grid-cols-5  gap-5 grid-cols-3 mb-20">

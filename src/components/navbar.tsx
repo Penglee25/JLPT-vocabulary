@@ -20,7 +20,7 @@ const NavMobile = ({ onClick }: any) => {
         <div className={`md:hidden flex flex-col text-white font-dosis w-11/12 mx-auto pl-2 pb-5 ${animate ? '' : 'translate-x-60 -translate-y-7 opacity-0'} transform transition duration-1000`}>
             {
                 navLinks.map((nav: any, i) => (
-                    <Link key={i} href={nav.path}>
+                    <Link key={i} href={nav.path} passHref>
                         <span className='font-bold text-lg mr-4 px-2 cursor-pointer border-b-2 border-transparent hover:border-white anim'>{nav.name}</span>
                     </Link>
                 ))
@@ -36,13 +36,13 @@ export default function Navbar() {
     return (
         <div style={{ backgroundColor: '#091c29' }} className='fixed top-0 w-full z-20 px-6'>
             <div className="w-full mx-auto py-3 flex items-center justify-between text-red-300 font-dosis transform transition duration-2500 text-2xl font-bold cursor-pointer">
-                <Link href={navLinks[0].path}>
+                <Link href={navLinks[0].path} passHref>
                     <h3> JLPT </h3>
                 </Link>
                 <div className={`hidden md:block ${animate ? '' : 'translate-x-20 opacity-0'} transform transition duration-2500`}>
                     {
                         navLinks.map((nav: any, i) => (
-                            <Link key={i} href={nav.path}>
+                            <Link key={i} href={nav.path} passHref>
                                 <span className='font-bold text-lg mr-4 px-2 cursor-pointer border-b-2 border-transparent hover:border-white anim'>{nav.name}</span>
                             </Link>
                         ))
