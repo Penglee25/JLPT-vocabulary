@@ -1,7 +1,7 @@
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
+import Pagination from "../components/pagination";
 import { pickDB } from "../utils/search-words";
-import Pagination from "./pagination";
 
 interface words {
     word: string;
