@@ -33,7 +33,7 @@ export default function Pagination<T>({ data, itemsPerPage }: Props<T>) {
         );
 
         return filteredData.slice(start, end).map((item: any, index: number) => (
-            <div key={index} className="block rounded-lg bg-red-300 p-6 shadow-lg dark:bg-neutral-700">
+            <div key={index} className="block rounded-lg bg-red-300 p-6 shadow-lg  ">
                 <span className='text-2xl font-bold text-red-600'>{item.word}</span>
                 <p className='my-0 text-lg'>Furigana: {item.furigana}</p>
                 <p className='my-0 text-lg'>Romaji: {item.romaji}</p>

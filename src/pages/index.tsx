@@ -60,7 +60,7 @@ const Home: NextPage = () => {
         <div className="grid md:grid-cols-5  gap-5 grid-cols-2 mb-20">
           {N5 !== '' ?
             N5.map((item: any, i: number) => (
-              <div key={i} className="block rounded-lg bg-red-300 p-6 shadow-lg dark:bg-neutral-700">
+              <div key={i} className="block rounded-lg bg-red-300 p-6 shadow-lg  ">
                 <span className='text-2xl font-bold text-red-600'>{item.word}</span>
                 <p className='my-0 text-lg'>Furigana: {item.furigana}</p>
                 <p className='my-0 text-lg'>Romaji: {item.romaji}</p>
@@ -77,7 +77,7 @@ const Home: NextPage = () => {
         <div className="grid md:grid-cols-5  gap-5 grid-cols-2 mb-20">
           {N4 !== '' ?
             N4.map((item: any, i: number) => (
-              <div key={i} className="block rounded-lg bg-red-300 p-6 shadow-lg dark:bg-neutral-700">
+              <div key={i} className="block rounded-lg bg-red-300 p-6 shadow-lg  ">
                 <span className='text-2xl font-bold text-red-600'>{item.word}</span>
                 <p className='my-0 text-lg'>Furigana: {item.furigana}</p>
                 <p className='my-0 text-lg'>Romaji: {item.romaji}</p>
@@ -94,7 +94,7 @@ const Home: NextPage = () => {
         <div className="grid md:grid-cols-5  gap-5 grid-cols-2 mb-20">
           {N3 !== '' ?
             N3.map((item: any, i: number) => (
-              <div key={i} className="block rounded-lg bg-red-300 p-6 shadow-lg dark:bg-neutral-700">
+              <div key={i} className="block rounded-lg bg-red-300 p-6 shadow-lg  ">
                 <span className='text-2xl font-bold text-red-600'>{item.word}</span>
                 <p className='my-0 text-lg'>Furigana: {item.furigana}</p>
                 <p className='my-0 text-lg'>Romaji: {item.romaji}</p>
@@ -111,7 +111,7 @@ const Home: NextPage = () => {
         <div className="grid md:grid-cols-5  gap-5 grid-cols-2 mb-20">
           {N2 !== '' ?
             N2.map((item: any, i: number) => (
-              <div key={i} className="block rounded-lg bg-red-300 p-6 shadow-lg dark:bg-neutral-700">
+              <div key={i} className="block rounded-lg bg-red-300 p-6 shadow-lg  ">
                 <span className='text-2xl font-bold text-red-600'>{item.word}</span>
                 <p className='my-0 text-lg'>Furigana: {item.furigana}</p>
                 <p className='my-0 text-lg'>Romaji: {item.romaji}</p>
@@ -128,7 +128,7 @@ const Home: NextPage = () => {
         <div className="grid md:grid-cols-5  gap-5 grid-cols-2 mb-20">
           {N1 !== '' ?
             N1.map((item: any, i: number) => (
-              <div key={i} className="block rounded-lg bg-red-300 p-6 shadow-lg dark:bg-neutral-700">
+              <div key={i} className="block rounded-lg bg-red-300 p-6 shadow-lg  ">
                 <span className='text-2xl font-bold text-red-600'>{item.word}</span>
                 <p className='my-0 text-lg'>Furigana: {item.furigana}</p>
                 <p className='my-0 text-lg'>Romaji: {item.romaji}</p>
